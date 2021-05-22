@@ -1,0 +1,163 @@
+@import "./footer";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Overpass";
+}
+body {
+  h2 {
+    color: hsl(208, 49%, 24%);
+  }
+  p {
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: "Ubuntu";
+  }
+}
+
+.padding-for-content {
+  padding: 2rem;
+}
+#header {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  border-bottom-left-radius: 20%;
+  margin-bottom: 6rem;
+  background: linear-gradient(150deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+
+  #blogr-and-burger {
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    #burger {
+      z-index: 2;
+    }
+    img {
+      padding-top: 1rem;
+    }
+    h2 {
+      color: white;
+      font-size: 2.8rem;
+      font-family: "Overpass";
+      font-weight: 600;
+    }
+  }
+  #header-main-text-and-buttons {
+    background-size: cover;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Overpass";
+    img {
+      z-index: 1;
+      position: absolute;
+      width: 1200px;
+      height: 1200px;
+      top: -78%;
+      right: -148%;
+    }
+    #header-text {
+      z-index: 2;
+      h1 {
+        margin-bottom: 2rem;
+      }
+      p {
+        font-family: "Overpass";
+        font-weight: 300;
+        font-size: 2rem;
+      }
+    }
+
+    #button-in-header {
+      z-index: 2;
+    }
+    button {
+      margin-right: 1rem;
+      font-family: "Overpass";
+      font-size: 1.6rem;
+      color: white;
+      border: 1px solid white;
+      background: none;
+      padding: 1.2rem 2.2rem;
+      margin-bottom: 12rem;
+      border-top-right-radius: 100%120px;
+      border-top-left-radius: 100%120px;
+      border-bottom-right-radius: 100%120px;
+      border-bottom-left-radius: 100%120px;
+    }
+  }
+}
+p {
+  &.padding-for-content {
+    line-height: 2.4rem;
+    max-width: 100%;
+    padding: 0rem 4.4rem;
+    margin: 0 auto;
+    color: hsla(237, 17%, 21%, 0.8);
+  }
+}
+#first-image {
+  img {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+#two-phone-section {
+  position: relative;
+  border-top-right-radius: 18%;
+  border-bottom-left-radius: 18%;
+  height: 58rem;
+  width: 100%;
+  background-image: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+
+  #tha-two-phones-in-da-section {
+    img {
+      transform: translateY(-50%);
+      position: absolute;
+      max-width: 100%;
+      z-index: 3;
+      left: 0;
+    }
+  }
+  #div-for-da-background-circles {
+    position: relative;
+    overflow: hidden;
+    height: 40rem;
+    top: 8%;
+    transform: translateY(-20%);
+
+    img {
+      transform: translate(-15%, -30%);
+      position: absolute;
+      max-width: 145%;
+      z-index: 2;
+    }
+  }
+  #div-for-da-text-in-phone-section {
+    transform: translateY(-73%);
+  }
+}
+#second-image {
+  img {
+    margin-top: 5rem;
+    padding: 0;
+    transform: translateX(-12%);
+  }
+}

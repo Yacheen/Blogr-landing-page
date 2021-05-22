@@ -1,0 +1,247 @@
+#footer-div {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  line-height: 3rem;
+  background-color: #25252d;
+  color: #c8c8cb;
+  font-family: "Overpass";
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-top-right-radius: 20%;
+}
+
+#footer-div #blogr-in-footer {
+  margin-top: 5rem;
+  color: white;
+  margin-bottom: 6rem;
+}
+
+#footer-div #Product-part-of-footer {
+  margin-bottom: 3rem;
+}
+
+#footer-div #Product-part-of-footer li:nth-child(1) {
+  color: white;
+  margin-bottom: 1.6rem;
+}
+
+#footer-div #company-part-of-footer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+#footer-div #company-part-of-footer li:nth-child(1) {
+  margin-bottom: 1.6rem;
+  color: white;
+}
+
+#footer-div #connect-part-of-footer {
+  margin-bottom: 3rem;
+}
+
+#footer-div #connect-part-of-footer li:nth-child(1) {
+  margin-bottom: 1.6rem;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Overpass";
+}
+
+body h2 {
+  color: #1f3f5b;
+}
+
+body p {
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: "Ubuntu";
+}
+
+.padding-for-content {
+  padding: 2rem;
+}
+
+#header {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  border-bottom-left-radius: 20%;
+  margin-bottom: 6rem;
+  background: linear-gradient(150deg, #ff8f70, #ff3d54);
+}
+
+#header #blogr-and-burger {
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+#header #blogr-and-burger #burger {
+  z-index: 2;
+}
+
+#header #blogr-and-burger img {
+  padding-top: 1rem;
+}
+
+#header #blogr-and-burger h2 {
+  color: white;
+  font-size: 2.8rem;
+  font-family: "Overpass";
+  font-weight: 600;
+}
+
+#header #header-main-text-and-buttons {
+  background-size: cover;
+  position: relative;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Overpass";
+}
+
+#header #header-main-text-and-buttons img {
+  z-index: 1;
+  position: absolute;
+  width: 1200px;
+  height: 1200px;
+  top: -78%;
+  right: -148%;
+}
+
+#header #header-main-text-and-buttons #header-text {
+  z-index: 2;
+}
+
+#header #header-main-text-and-buttons #header-text h1 {
+  margin-bottom: 2rem;
+}
+
+#header #header-main-text-and-buttons #header-text p {
+  font-family: "Overpass";
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+#header #header-main-text-and-buttons #button-in-header {
+  z-index: 2;
+}
+
+#header #header-main-text-and-buttons button {
+  margin-right: 1rem;
+  font-family: "Overpass";
+  font-size: 1.6rem;
+  color: white;
+  border: 1px solid white;
+  background: none;
+  padding: 1.2rem 2.2rem;
+  margin-bottom: 12rem;
+  border-top-right-radius: 100% 120px;
+  border-top-left-radius: 100% 120px;
+  border-bottom-right-radius: 100% 120px;
+  border-bottom-left-radius: 100% 120px;
+}
+
+p.padding-for-content {
+  line-height: 2.4rem;
+  max-width: 100%;
+  padding: 0rem 4.4rem;
+  margin: 0 auto;
+  color: rgba(44, 45, 63, 0.8);
+}
+
+#first-image img {
+  max-width: 100%;
+  padding: 0;
+}
+
+#two-phone-section {
+  position: relative;
+  border-top-right-radius: 18%;
+  border-bottom-left-radius: 18%;
+  height: 58rem;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2c2d3f), to(#3f4164));
+  background-image: linear-gradient(#2c2d3f, #3f4164);
+}
+
+#two-phone-section #tha-two-phones-in-da-section img {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  max-width: 100%;
+  z-index: 3;
+  left: 0;
+}
+
+#two-phone-section #div-for-da-background-circles {
+  position: relative;
+  overflow: hidden;
+  height: 40rem;
+  top: 8%;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+}
+
+#two-phone-section #div-for-da-background-circles img {
+  -webkit-transform: translate(-15%, -30%);
+          transform: translate(-15%, -30%);
+  position: absolute;
+  max-width: 145%;
+  z-index: 2;
+}
+
+#two-phone-section #div-for-da-text-in-phone-section {
+  -webkit-transform: translateY(-73%);
+          transform: translateY(-73%);
+}
+
+#second-image img {
+  margin-top: 5rem;
+  padding: 0;
+  -webkit-transform: translateX(-12%);
+          transform: translateX(-12%);
+}
+/*# sourceMappingURL=style.css.map */
