@@ -84,6 +84,10 @@ body p {
   font-family: "Ubuntu";
 }
 
+.wrapper-for-first-non-colored-background-section .desktop-first-image {
+  display: none;
+}
+
 .padding-for-content {
   padding: 2rem;
 }
@@ -106,6 +110,14 @@ body p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 3rem;
+}
+
+#header #blogr-and-burger #navigation-links {
+  display: none;
+}
+
+#header #blogr-and-burger #login-and-signup-buttons {
+  display: none;
 }
 
 #header #blogr-and-burger #burger {
@@ -167,6 +179,8 @@ body p {
 
 #header #header-main-text-and-buttons #button-in-header {
   z-index: 2;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 #header #header-main-text-and-buttons button {
@@ -189,12 +203,11 @@ p.padding-for-content {
   max-width: 100%;
   padding: 0rem 4.4rem;
   margin: 0 auto;
-  color: rgba(44, 45, 63, 0.8);
+  color: rgba(67, 68, 70, 0.65);
 }
 
-#first-image img {
+.first-image img {
   max-width: 100%;
-  padding: 0;
 }
 
 #two-phone-section {
@@ -238,10 +251,357 @@ p.padding-for-content {
           transform: translateY(-73%);
 }
 
-#second-image img {
+#second-imagerino-desktop {
+  display: none;
+}
+
+#second-imagerino img {
+  max-width: 100%;
   margin-top: 5rem;
-  padding: 0;
-  -webkit-transform: translateX(-12%);
-          transform: translateX(-12%);
+}
+
+@media screen and (min-width: 770px) {
+  body {
+    overflow-x: hidden;
+  }
+  body #first-h2 h2 {
+    font-size: 5rem;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  /* everything enclosed within the orange header section */
+  #header {
+    min-width: 100vw;
+    border-bottom-left-radius: 10% 10rem;
+  }
+  #header #blogr-and-burger {
+    position: relative;
+    max-width: 80vw;
+    margin: 2rem 10rem 5rem 10rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #header #blogr-and-burger #navigation-left-side {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #header #blogr-and-burger #navigation-left-side h2 {
+    font-size: 3.6rem;
+    margin-right: 4rem;
+  }
+  #header #blogr-and-burger #navigation-left-side #navigation-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #header #blogr-and-burger #navigation-left-side #navigation-links .nav-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.8rem;
+    color: white;
+    padding: 2rem;
+    font-family: "ubuntu";
+    font-weight: 600;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #header #blogr-and-burger #navigation-left-side #navigation-links .nav-link img {
+    padding-left: 1rem;
+  }
+  #header #blogr-and-burger #burger {
+    display: none;
+  }
+  #header #blogr-and-burger #login-and-signup-buttons {
+    position: relative;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #header #blogr-and-burger #login-and-signup-buttons button {
+    margin-left: 2rem;
+    font-family: "ubuntu";
+    font-size: 1.8rem;
+    font-weight: 500;
+    background: none;
+    border: none;
+    padding: 1rem 3rem;
+    border-top-right-radius: 100% 120px;
+    border-top-left-radius: 100% 120px;
+    border-bottom-right-radius: 100% 120px;
+    border-bottom-left-radius: 100% 120px;
+  }
+  #header #blogr-and-burger #login-and-signup-buttons #login-button {
+    color: white;
+  }
+  #header #blogr-and-burger #login-and-signup-buttons #signup-button {
+    background: white;
+    color: #ff525d;
+  }
+  #header #header-main-text-and-buttons img {
+    z-index: 1;
+    position: absolute;
+    width: 340rem;
+    height: 300rem;
+    top: -370%;
+    left: -14%;
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  #header #header-main-text-and-buttons #header-text h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+  #header #header-main-text-and-buttons #header-text p {
+    margin-bottom: 3rem;
+  }
+  #header #header-main-text-and-buttons #button-in-header button {
+    border-top-right-radius: 80% 120px;
+    border-top-left-radius: 80% 120px;
+    border-bottom-right-radius: 80% 120px;
+    border-bottom-left-radius: 80% 120px;
+    padding-right: 1.8rem;
+    padding-left: 1.8rem;
+    padding-bottom: 1.4rem;
+    font-family: "ubuntu";
+    font-size: 1.8rem;
+    font-weight: 500;
+    background: none;
+  }
+  #header #header-main-text-and-buttons #button-in-header #start-for-free-button {
+    border: none;
+    background: white;
+    color: #ff525d;
+  }
+  #header #header-main-text-and-buttons #button-in-header #learn-more-button {
+    color: white;
+  }
+  /*section just after the orange header with white background*/
+  .wrapper-for-first-non-colored-background-section {
+    margin: 10rem 0rem 26rem 12rem;
+  }
+  .wrapper-for-first-non-colored-background-section .desktop-first-image {
+    margin-top: 15rem;
+    display: block;
+  }
+  .wrapper-for-first-non-colored-background-section .desktop-first-image img {
+    width: 110rem;
+    height: 100rem;
+    -webkit-transform: translate(90%, -26%);
+            transform: translate(90%, -26%);
+    position: absolute;
+  }
+  .wrapper-for-first-non-colored-background-section .first-image {
+    display: none;
+  }
+  .wrapper-for-first-non-colored-background-section .text-block1 {
+    min-width: 180rem;
+  }
+  .wrapper-for-first-non-colored-background-section .text-block1 h2 {
+    font-size: 3.2rem;
+    padding-left: 10rem;
+    padding-bottom: 1rem;
+    text-align: start;
+  }
+  .wrapper-for-first-non-colored-background-section .text-block1 p {
+    line-height: 2.8rem;
+    font-size: 1.8rem;
+    padding-left: 10rem;
+    text-align: start;
+    max-width: 40%;
+    margin: 0 auto 9rem 0;
+  }
+  .wrapper-for-first-non-colored-background-section .text-block2 {
+    min-width: 180rem;
+  }
+  .wrapper-for-first-non-colored-background-section .text-block2 h2 {
+    font-size: 3.2rem;
+    padding-left: 10rem;
+    padding-bottom: 0;
+    text-align: start;
+  }
+  .wrapper-for-first-non-colored-background-section .text-block2 p {
+    line-height: 2.8rem;
+    font-size: 1.8rem;
+    padding-left: 10rem;
+    text-align: start;
+    max-width: 40%;
+    margin: 0 auto 0 0;
+  }
+  /* section with the two phones and dark blue background*/
+  #two-phone-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 45rem;
+  }
+  #two-phone-section #tha-two-phones-in-da-section img {
+    -webkit-transform: translate(27%, -14%);
+            transform: translate(27%, -14%);
+    max-height: 140%;
+    max-width: 40vw;
+  }
+  #two-phone-section #div-for-da-background-circles {
+    min-width: 100%;
+    height: auto;
+    -webkit-transform: translate(-5%, -8%);
+            transform: translate(-5%, -8%);
+    border-bottom-left-radius: 18%;
+  }
+  #two-phone-section #div-for-da-background-circles img {
+    max-width: 100%;
+    -webkit-transform: translate(-18%, -45%);
+            transform: translate(-18%, -45%);
+  }
+  #two-phone-section #div-for-da-text-in-phone-section {
+    position: relative;
+    bottom: -60%;
+    left: -50%;
+    min-width: 58rem;
+    margin-left: 0rem;
+  }
+  #two-phone-section #div-for-da-text-in-phone-section p {
+    font-family: "overpass";
+    font-weight: 400;
+    text-align: start;
+    padding: 0rem;
+    max-width: 90%;
+    margin: 0;
+    line-height: 3rem;
+    font-size: 1.6rem;
+  }
+  #two-phone-section #div-for-da-text-in-phone-section h2 {
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+    text-align: start;
+    max-width: 100%;
+    padding: 0;
+  }
+  .wrapper-for-third-section {
+    position: relative;
+    left: -17%;
+    margin: 0rem 12rem 0rem 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 60vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapper-for-third-section #second-imagerino-desktop {
+    display: block;
+    min-width: 65vw;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  .wrapper-for-third-section #second-imagerino-desktop img {
+    min-width: 90%;
+  }
+  .wrapper-for-third-section #second-imagerino {
+    display: none;
+  }
+  .wrapper-for-third-section #texts-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translateY(6%);
+            transform: translateY(6%);
+  }
+  .wrapper-for-third-section #texts-container #third-section-text-block1 {
+    min-width: 180rem;
+    margin-bottom: 10rem;
+  }
+  .wrapper-for-third-section #texts-container #third-section-text-block1 h2 {
+    font-size: 3.2rem;
+    padding-left: 10rem;
+    padding-bottom: 0;
+    text-align: start;
+    margin-bottom: 2rem;
+    max-width: 40%;
+  }
+  .wrapper-for-third-section #texts-container #third-section-text-block1 p {
+    line-height: 2.8rem;
+    font-size: 1.8rem;
+    padding-left: 10rem;
+    text-align: start;
+    max-width: 40%;
+    margin-bottom: 9rem;
+    margin: 0;
+  }
+  .wrapper-for-third-section #texts-container #third-section-text-block2 {
+    min-width: 18rem;
+  }
+  .wrapper-for-third-section #texts-container #third-section-text-block2 h2 {
+    font-size: 3.2rem;
+    padding-left: 10rem;
+    padding-bottom: 0;
+    text-align: start;
+    margin-bottom: 2rem;
+    max-width: 40%;
+  }
+  .wrapper-for-third-section #texts-container #third-section-text-block2 p {
+    line-height: 2.8rem;
+    font-size: 1.8rem;
+    padding-left: 10rem;
+    text-align: start;
+    max-width: 40%;
+    margin: 0;
+  }
+  #footer-div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    padding-top: 6rem;
+  }
+  #footer-div #blogr-in-footer {
+    margin: 0 25rem 0rem 20rem;
+  }
+  #footer-div #Product-part-of-footer {
+    font-size: 1.8rem;
+    text-align: left;
+    line-height: 3.6rem;
+    margin-right: 25rem;
+  }
+  #footer-div #company-part-of-footer {
+    font-size: 1.8rem;
+    text-align: left;
+    line-height: 3.6rem;
+    margin-right: 25rem;
+  }
+  #footer-div #connect-part-of-footer {
+    font-size: 1.8rem;
+    text-align: left;
+    line-height: 3.6rem;
+    margin-right: 10rem;
+  }
+  .attribution {
+    position: absolute;
+    -webkit-transform: translateY(300%);
+            transform: translateY(300%);
+  }
 }
 /*# sourceMappingURL=style.css.map */

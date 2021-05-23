@@ -18,46 +18,75 @@
 </head>
 <body>
   <section id="header">
-    <div id="background-of-the-header">
+   
      
     <div class="padding-for-content" id="blogr-and-burger">
+      <div id="navigation-left-side">
       <h2>Blogr</h2>
-      <div id="burger">
-        <img src="images/icon-hamburger.svg" alt="a navigation burger button"/>
+
+      <ul id="navigation-links">
+        <li class="nav-link">Product<img src="./images/icon-arrow-light.svg"></li>
+        <li class="nav-link">Company<img src="./images/icon-arrow-light.svg"></li>
+        <li class="nav-link">Connect<img src="./images/icon-arrow-light.svg"></li>
+      </ul>
       </div>
 
+      
+      <div id="login-and-signup-buttons">
+        <button id="login-button" type="button">Login</button>
+        <button id="signup-button" type="button">Sign Up</button>
+      </div>
+
+      <ul id="burger">
+        <img src="images/icon-hamburger.svg" alt="a navigation burger button"/>
+      </ul>
     </div>
-  
+
 
     <div class="padding-for-content" id="header-main-text-and-buttons">
       <img src="./images/bg-pattern-intro.svg"/>
+
       <div id="header-text">
         <h1> A modern publishing platform</h1>
         <p> Grow your audience and build your online brand</p>
       </div>
+
       <div class="padding-for-content" id="button-in-header">
-        <button type="button">Start for Free</button>
-        <button type="button">Learn More</button>
+        <button id="start-for-free-button" type="button">Start for Free</button>
+        <button id="learn-more-button" type="button">Learn More</button>
       </div>
 
     </div>
-  </div>
   </section>
 
-  <h2 class="padding-for-content">Designed for the future</h2>
-  <div id="first-image">
-  <img class="padding-for-content" src="./images/illustration-editor-mobile.svg" alt="an image of a graph"/>
+  <div id="first-h2">
+    <h2 class="padding-for-content">Designed for the future</h2>
   </div>
-  
-  <h2 class="padding-for-content">Introducing an extensible editor</h2>
-  <p class="padding-for-content">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-    The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-    videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-    change the looks of a blog.</p>
 
-  <h2 style="margin-bottom: 1rem; margin-top: 2rem;"class="padding-for-content" >Robust content management</h2>
-  <p style="margin-bottom: 26rem;"class="padding-for-content" >Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-    by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+  <div class="wrapper-for-first-non-colored-background-section">
+
+    <div class="desktop-first-image">
+      <img class="padding-for-content" src="./images/illustration-editor-desktop.svg" alt="an image of a graph"/>
+    </div>
+
+    <div class="first-image">
+      <img class="padding-for-content" src="./images/illustration-editor-mobile.svg" alt="an image of a graph"/>
+    </div>
+
+    <div class="text-block1">
+      <h2 class="padding-for-content">Introducing an extensible editor</h2>
+      <p class="padding-for-content">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+        The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+        videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+        change the looks of a blog.</p>
+    </div>
+
+    <div class="text-block2">
+      <h2 style="margin-bottom: 1rem; margin-top: 2rem;"class="padding-for-content" >Robust content management</h2>
+      <p style="margin-bottom: 26rem;"class="padding-for-content" >Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+        by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+    </div>
+  </div>
 
   <section id="two-phone-section">
     <div class="padding-for-content" id="tha-two-phones-in-da-section">
@@ -69,62 +98,76 @@
     </div>
 
       <div id="div-for-da-text-in-phone-section">
-      <h2 style="color: white; padding-top: 18rem;"class="padding-for-content" >State of the Art Infrastructure</h2>
-      <p style="color: white; padding-bottom: 10rem;"class="padding-for-content" > With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+        <h2 style="color: white; padding-top: 18rem;"class="padding-for-content" >State of the Art Infrastructure</h2>
+        <p style="color: white; padding-bottom: 10rem;"class="padding-for-content" > With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
     </div>
     </section>
 
-  <div id="second-image">
-  <img id="second-image"class="padding-for-content" src="images/illustration-laptop-mobile.svg"/>
+
+<div class="wrapper-for-third-section">
+  <div id="second-imagerino-desktop">
+    <img id="second-image"class="padding-for-content" src="./images/illustration-laptop-desktop.svg"/>
   </div>
 
-  <h2 class="padding-for-content" >Free, open, simple</h2>
-  <p class="padding-for-content" >Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-    features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-    and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+  <div id="second-imagerino">
+    <img id="second-image"class="padding-for-content" src="images/illustration-laptop-mobile.svg"/>
+  </div>
 
-  <h2 class="padding-for-content" >Powerful tooling</h2>
-  <p style="margin-bottom: 10rem;"class="padding-for-content" >Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-    capable of producing even the most complicated sites.</p>
+<div id="texts-container">
+    <div id="third-section-text-block1">
+      <h2 class="padding-for-content" >Free, open, simple</h2>
+      <p class="padding-for-content" >Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+    </div>
+    
+    <div id="third-section-text-block2">
+      <h2 class="padding-for-content" >Powerful tooling</h2>
+      <p style="margin-bottom: 10rem;"class="padding-for-content" >Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+        capable of producing even the most complicated sites.</p>
+    </div>
+  </div>
+</div>
+  
 
   <footer>
-    <div class="padding-for-content" id="footer-div">
-      <h1 id="blogr-in-footer">Blogr</h1>
+    <div id="footer-div" class="padding-for-content"><!--USE SEMANTICS-->
       
-      <ul id="Product-part-of-footer">
-        <li>Product</li>
+        <h1 id="blogr-in-footer">Blogr</h1>
+        
+        <ul id="Product-part-of-footer">
+          <li>Product</li>
 
-        <li>Overview</li>
-        <li>Pricing</li>
-        <li>Marketplace</li>
-        <li>Features</li>
-        <li>Integrations</li>
-      </ul>
+          <li>Overview</li>
+          <li>Pricing</li>
+          <li>Marketplace</li>
+          <li>Features</li>
+          <li>Integrations</li>
+        </ul>
 
-      <ul id="company-part-of-footer">
-        <li>Company</li>
+        <ul id="company-part-of-footer">
+          <li>Company</li>
 
-        <li>About</li>
-        <li>Team</li>
-        <li>Blog</li>
-        <li>Careers</li>
-      </ul>
+          <li>About</li>
+          <li>Team</li>
+          <li>Blog</li>
+          <li>Careers</li>
+        </ul>
 
-      <ul id="connect-part-of-footer">
-        <li>Connect</li>
+        <ul id="connect-part-of-footer">
+          <li>Connect</li>
 
-        <li>Contact</li>
-        <li>Newsletter</li>
-        <li>LinkedIn</li>
-      </ul>
-      <div style="font-size: 1.4rem;"class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Yassin</a>.
-      </div>
-    </div>
-
-  </footer>
+          <li>Contact</li>
+          <li>Newsletter</li>
+          <li>LinkedIn</li>
+        </ul>
+        <div style="font-size: 1.4rem;"class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Yassin</a>.
+        </div>
+  </div>
+</footer>
 <!-- these are for the dropdown burger with login and signup aswell
   Product
 
