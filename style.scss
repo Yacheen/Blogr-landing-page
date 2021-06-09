@@ -52,19 +52,83 @@ body {
     #login-and-signup-buttons {
       display: none;
     }
-    #burger {
-      z-index: 2;
+    .burger {
+      z-index: 5;
+      position: relative;
     }
+    .navigation-links {
+      position: relative;
+      display: none;
+      margin-top: 5rem;
+      min-width: 90vw;
+      position: absolute;
+      z-index: 10;
+      background-color: white;
+      border-radius: 3%;
+
+      li {
+        cursor: pointer;
+        font-size: 2rem;
+        padding: 2rem;
+        color: hsl(208, 49%, 24%);
+      }
+
+      .item-4 {
+        border-top: 1px solid rgb(49, 48, 48);
+      }
+      .item-5 a {
+        border-top-right-radius: 100%120px;
+        border-top-left-radius: 100%120px;
+        border-bottom-right-radius: 100%120px;
+        border-bottom-left-radius: 100%120px;
+        font-family: "Overpass";
+        font-weight: 700;
+        padding: 1.2rem 2.6rem;
+        border: none;
+        color: white;
+        background: linear-gradient(
+          90deg,
+          hsl(13, 100%, 72%),
+          hsl(353, 100%, 62%)
+        );
+      }
+      .Product-children {
+        display: none;
+        .item-1-active {
+          display: block;
+        }
+      }
+      .Company-children {
+        display: none;
+        .item-2-active {
+          display: block;
+        }
+      }
+      .Connect-children {
+        display: none;
+        .item-3-active {
+          display: block;
+        }
+      }
+    }
+
+    .list-items-active {
+      display: block;
+    }
+
     img {
       padding-top: 1rem;
     }
     h2 {
       color: white;
       font-size: 2.8rem;
+      position: relative;
+      z-index: 5;
       font-family: "Overpass";
       font-weight: 600;
     }
   }
+
   #header-main-text-and-buttons {
     background-size: cover;
     position: relative;
@@ -126,6 +190,8 @@ p {
   }
 }
 .first-image {
+  display: flex;
+  justify-content: center;
   img {
     max-width: 100%;
   }
@@ -170,6 +236,8 @@ p {
   display: none;
 }
 #second-imagerino {
+  display: flex;
+  justify-content: center;
   img {
     max-width: 100%;
     margin-top: 5rem;

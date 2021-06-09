@@ -44,7 +44,7 @@
           }
         }
       }
-      #burger {
+      .burger {
         display: none;
       }
       #login-and-signup-buttons {
@@ -71,6 +71,11 @@
         #signup-button {
           background: white;
           color: hsl(356, 100%, 66%);
+        }
+      }
+      .dropdown {
+        display: none;
+        .list-items {
         }
       }
     }
@@ -226,17 +231,18 @@
   }
   .wrapper-for-third-section {
     position: relative;
-    left: -17%;
+    left: -9%;
     margin: 0rem 12rem 0rem 0rem;
     display: flex;
     min-height: 60vh;
     align-items: center;
+    display: inline-flex;
 
     #second-imagerino-desktop {
       display: block;
-      min-width: 65vw;
+      min-width: 50vw;
       img {
-        min-width: 90%;
+        max-width: 100%;
       }
       margin-bottom: 2rem;
       margin-top: 2rem;
@@ -272,7 +278,7 @@
         }
       }
       #third-section-text-block2 {
-        min-width: 18rem;
+        min-width: 180rem;
         h2 {
           font-size: 3.2rem;
           padding-left: 10rem;
@@ -294,32 +300,32 @@
   }
 
   #footer-div {
+    position: relative;
     flex-direction: row;
     align-items: unset;
     padding-top: 6rem;
+    justify-content: space-evenly;
 
     #blogr-in-footer {
-      margin: 0 25rem 0rem 20rem;
+      margin: 0 25rem 0rem 0rem;
     }
     #Product-part-of-footer {
       font-size: 1.8rem;
       text-align: left;
       line-height: 3.6rem;
-      margin-right: 25rem;
     }
     #company-part-of-footer {
       font-size: 1.8rem;
       text-align: left;
       line-height: 3.6rem;
-      margin-right: 25rem;
     }
     #connect-part-of-footer {
       font-size: 1.8rem;
       text-align: left;
       line-height: 3.6rem;
-      margin-right: 10rem;
     }
   }
+
   .attribution {
     position: absolute;
     transform: translateY(300%);
