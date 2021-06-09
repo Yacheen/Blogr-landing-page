@@ -67,6 +67,7 @@ body {
       border-radius: 3%;
 
       li {
+        display: block;
         cursor: pointer;
         font-size: 2rem;
         padding: 2rem;
@@ -94,9 +95,9 @@ body {
       }
       .Product-children {
         display: none;
-        .item-1-active {
-          display: block;
-        }
+      }
+      .item-1-active {
+        display: block;
       }
       .Company-children {
         display: none;

@@ -5,9 +5,12 @@
 const burgerButton = document.querySelector('.burger');
 const list = document.querySelector('.navigation-links');
 const listItems = document.querySelectorAll('.navigation-links ul li');
-const productChildren = document.querySelector('.navigation-links li .Product-children');
+const productChildren = document.querySelector('.Product-children');
 const companyChildren = document.querySelector('.Company-children');
 const connectChildren = document.querySelector('.Connect-children');
+const itemOne = document.querySelector('.navigation-links, .item-1');
+const itemTwo = document.querySelector('.navigation-links, .item-2');
+const itemThree = document.querySelector('.navigation-links, .item-3');
 let itemNumber = 0;
 //give each list item a class .list-items 
 listItems.forEach(item => {
@@ -21,23 +24,24 @@ listItems.forEach(item => {
 burgerButton.addEventListener('click', () => {
     //when they tap/click the button, dropdown the menu 
     //give each list item a class .list-items 
+    
     list.classList.toggle('list-items-active');
     
 
 });
-productChildren.addEventListener('click', () => {
+itemOne.addEventListener('click', () => {
     
     productChildren.classList.toggle('item-1-active');
 
 });
 
-companyChildren.addEventListener('click', () => {
+itemTwo.addEventListener('click', () => {
     
     companyChildren.classList.toggle('item-2-active');
 
 });
 
-connectChildren.addEventListener('click', () => {
+itemThree.addEventListener('click', () => {
     
     connectChildren.classList.toggle('item-3-active');
 
