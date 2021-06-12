@@ -9,15 +9,22 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
 
-do I need 1?
+I had a lot of fun making the design required with the assets given, and
+this project may have helped me the most with developing my design skills.
+
+It took approximately 15 hours total, and helped me learn some topics with
+Javascript as well, such as:
+For loops,
+Functions invoking functions,
+Conditionals,
+Event listeners,
+and a couple of small tricks to get things up and running.
 
 ### The challenge
 
@@ -28,13 +35,16 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-### Links
+![](./desktop-design.jpg);
 
 ## My process
 
-### Built with
+First, I started with all of the html and css; designing everything to look responsive
+And then I added some functionality, such as hoverables and interaction with buttons and dropdowns.
+
+I aimed to only spend a couple of days on this project, however it took me approximately 15-20 hours to learn everything I needed.
+
+### What I learned
 
 - Semantic HTML5 markup
 - CSS custom properties
@@ -42,24 +52,13 @@ Users should be able to:
 - Mobile-first workflow
 - Javascript
 
-### What I learned
-
-```html
-
-```
-
-```css
-
-```
-
-```js
-
-```
-
-### Continued development
-
 ### Useful resources
+
+https://developer.mozilla.org/en-US/
+
+This website has been perfect for referencing documentation in order to get the job done.
 
 ## Author
 
-- Twitter - [@DJ_Y4SSIN](https://www.twitter.com/DJ_Y4ssin)
+-Yassin Moussaoui,
+yassinmoussaouibusiness@gmail.com
