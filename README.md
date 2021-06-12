@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Screenshot
 
-![image](./desktop-design.jpg);
+![image](./design/desktop-design.jpg);
 
 ## My process
 
