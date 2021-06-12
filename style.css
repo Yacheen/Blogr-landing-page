@@ -20,10 +20,26 @@
   border-top-right-radius: 20%;
 }
 
+#footer-div li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 #footer-div #blogr-in-footer {
+  cursor: pointer;
   margin-top: 5rem;
   color: white;
   margin-bottom: 6rem;
+}
+
+#footer-div #blogr-in-footer a,
+#footer-div #blogr-in-footer .back-to-top {
+  color: white;
+  text-decoration: none;
+}
+
+#footer-div #blogr-in-footer:hover {
+  text-decoration: underline;
 }
 
 #footer-div #Product-part-of-footer {
@@ -112,7 +128,12 @@ body p {
   margin-bottom: 3rem;
 }
 
-#header #blogr-and-burger #navigation-links {
+#header #blogr-and-burger h2 a {
+  text-decoration: none;
+  color: white;
+}
+
+#header #blogr-and-burger .navigation-links-desktop {
   display: none;
 }
 
@@ -136,7 +157,12 @@ body p {
   border-radius: 3%;
 }
 
+#header #blogr-and-burger .navigation-links p {
+  padding: 0.6rem;
+}
+
 #header #blogr-and-burger .navigation-links li {
+  display: block;
   cursor: pointer;
   font-size: 2rem;
   padding: 2rem;
@@ -163,25 +189,28 @@ body p {
 
 #header #blogr-and-burger .navigation-links .Product-children {
   display: none;
+  background: rgba(236, 236, 239, 0.65);
 }
 
-#header #blogr-and-burger .navigation-links .Product-children .item-1-active {
+#header #blogr-and-burger .navigation-links .item-1-active {
   display: block;
 }
 
 #header #blogr-and-burger .navigation-links .Company-children {
   display: none;
+  background: rgba(236, 236, 239, 0.65);
 }
 
-#header #blogr-and-burger .navigation-links .Company-children .item-2-active {
+#header #blogr-and-burger .navigation-links .item-2-active {
   display: block;
 }
 
 #header #blogr-and-burger .navigation-links .Connect-children {
   display: none;
+  background: rgba(236, 236, 239, 0.65);
 }
 
-#header #blogr-and-burger .navigation-links .Connect-children .item-3-active {
+#header #blogr-and-burger .navigation-links .item-3-active {
   display: block;
 }
 
@@ -345,6 +374,16 @@ p.padding-for-content {
   margin-top: 5rem;
 }
 
+.attribution {
+  z-index: 5;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
 @media screen and (min-width: 770px) {
   body {
     overflow-x: hidden;
@@ -358,9 +397,11 @@ p.padding-for-content {
   #header {
     min-width: 100vw;
     border-bottom-left-radius: 10% 10rem;
+    margin-bottom: 0;
   }
   #header #blogr-and-burger {
     position: relative;
+    z-index: 10;
     max-width: 80vw;
     margin: 2rem 10rem 5rem 10rem;
     display: -webkit-box;
@@ -377,30 +418,78 @@ p.padding-for-content {
             align-items: center;
   }
   #header #blogr-and-burger #navigation-left-side h2 {
+    cursor: pointer;
     font-size: 3.6rem;
     margin-right: 4rem;
   }
-  #header #blogr-and-burger #navigation-left-side #navigation-links {
+  #header #blogr-and-burger #navigation-left-side h2 a {
+    text-decoration: none;
+    color: white;
+  }
+  #header #blogr-and-burger #navigation-left-side .navigation-links-desktop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  #header #blogr-and-burger #navigation-left-side #navigation-links .nav-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  #header #blogr-and-burger #navigation-left-side .navigation-links-desktop .nav-link {
+    position: relative;
+    display: inline-block;
     font-size: 1.8rem;
-    color: white;
     padding: 2rem;
     font-family: "ubuntu";
     font-weight: 600;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
-  #header #blogr-and-burger #navigation-left-side #navigation-links .nav-link img {
+  #header #blogr-and-burger #navigation-left-side .navigation-links-desktop .nav-link .DesktopDropdowns {
+    position: absolute;
+    background-color: #f1f1f1;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5%;
+    margin-top: 0.4rem;
+    z-index: 10;
+  }
+  #header #blogr-and-burger #navigation-left-side .navigation-links-desktop .nav-link .DesktopDropdowns a {
+    color: #353434;
+    padding: 1.2rem 1.6rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 1.4rem;
+  }
+  #header #blogr-and-burger #navigation-left-side .navigation-links-desktop .nav-link .DesktopDropdowns a:hover {
+    color: black;
+    font-weight: 700;
+  }
+  #header #blogr-and-burger #navigation-left-side .navigation-links-desktop .nav-link .Product-Dropdown {
+    display: none;
+  }
+  #header #blogr-and-burger #navigation-left-side .navigation-links-desktop .nav-link .Company-Dropdown {
+    display: none;
+  }
+  #header #blogr-and-burger #navigation-left-side .navigation-links-desktop .nav-link .Connect-Dropdown {
+    display: none;
+  }
+  #header #blogr-and-burger #navigation-left-side .navigation-links-desktop .nav-link:hover {
+    text-decoration: underline;
+    -webkit-text-decoration-color: white;
+            text-decoration-color: white;
+    cursor: pointer;
+  }
+  #header #blogr-and-burger #navigation-left-side .navigation-links-desktop .nav-link a {
+    color: white;
+    text-decoration: none;
+  }
+  #header #blogr-and-burger #navigation-left-side .navigation-links-desktop .nav-link img {
     padding-left: 1rem;
+  }
+  #header #blogr-and-burger #navigation-left-side .navigation-links-desktop .Product-link:hover .Product-Dropdown {
+    display: block;
+  }
+  #header #blogr-and-burger #navigation-left-side .navigation-links-desktop .Company-link:hover .Company-Dropdown {
+    display: block;
+  }
+  #header #blogr-and-burger #navigation-left-side .navigation-links-desktop .Connect-link:hover .Connect-Dropdown {
+    display: block;
   }
   #header #blogr-and-burger .burger {
     display: none;
@@ -430,10 +519,24 @@ p.padding-for-content {
   }
   #header #blogr-and-burger #login-and-signup-buttons #login-button {
     color: white;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+  }
+  #header #blogr-and-burger #login-and-signup-buttons #login-button:hover {
+    background: white;
+    color: #ff525d;
+    cursor: pointer;
   }
   #header #blogr-and-burger #login-and-signup-buttons #signup-button {
     background: white;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
     color: #ff525d;
+  }
+  #header #blogr-and-burger #login-and-signup-buttons #signup-button:hover {
+    cursor: pointer;
+    background: #f58a8a;
+    color: white;
   }
   #header #blogr-and-burger .dropdown {
     display: none;
@@ -449,6 +552,7 @@ p.padding-for-content {
             transform: rotate(3deg);
   }
   #header #header-main-text-and-buttons #header-text h1 {
+    pointer-events: none;
     font-size: 5rem;
     margin-bottom: 1rem;
   }
@@ -467,65 +571,100 @@ p.padding-for-content {
     font-size: 1.8rem;
     font-weight: 500;
     background: none;
+    cursor: pointer;
   }
   #header #header-main-text-and-buttons #button-in-header #start-for-free-button {
     border: none;
     background: white;
     color: #ff525d;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+  }
+  #header #header-main-text-and-buttons #button-in-header #start-for-free-button:hover {
+    background: #f58a8a;
+    color: white;
   }
   #header #header-main-text-and-buttons #button-in-header #learn-more-button {
     color: white;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+  }
+  #header #header-main-text-and-buttons #button-in-header #learn-more-button:hover {
+    color: #ff525d;
+    background: white;
   }
   /*section just after the orange header with white background*/
   .wrapper-for-first-non-colored-background-section {
-    margin: 10rem 0rem 26rem 12rem;
+    margin: 5rem 0rem 0rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 70vh;
   }
   .wrapper-for-first-non-colored-background-section .desktop-first-image {
-    margin-top: 15rem;
     display: block;
+    min-width: 50vw;
+    position: relative;
+    -webkit-transform: translate(30%, -14%);
+            transform: translate(30%, -14%);
   }
   .wrapper-for-first-non-colored-background-section .desktop-first-image img {
-    width: 110rem;
-    height: 100rem;
-    -webkit-transform: translate(90%, -26%);
-            transform: translate(90%, -26%);
-    position: absolute;
+    max-width: 100%;
+    position: relative;
   }
   .wrapper-for-first-non-colored-background-section .first-image {
     display: none;
   }
-  .wrapper-for-first-non-colored-background-section .text-block1 {
-    min-width: 180rem;
+  .wrapper-for-first-non-colored-background-section .first-section-text-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .wrapper-for-first-non-colored-background-section .text-block1 h2 {
+  .wrapper-for-first-non-colored-background-section .first-section-text-wrapper .text-block1 {
+    min-width: 18rem;
+    min-height: 50%;
+    margin-bottom: 10rem;
+  }
+  .wrapper-for-first-non-colored-background-section .first-section-text-wrapper .text-block1 h2 {
     font-size: 3.2rem;
     padding-left: 10rem;
     padding-bottom: 1rem;
     text-align: start;
   }
-  .wrapper-for-first-non-colored-background-section .text-block1 p {
+  .wrapper-for-first-non-colored-background-section .first-section-text-wrapper .text-block1 p {
     line-height: 2.8rem;
     font-size: 1.8rem;
     padding-left: 10rem;
     text-align: start;
-    max-width: 40%;
-    margin: 0 auto 9rem 0;
+    max-width: 80%;
+    margin: 0 auto 0 0;
   }
-  .wrapper-for-first-non-colored-background-section .text-block2 {
-    min-width: 180rem;
+  .wrapper-for-first-non-colored-background-section .first-section-text-wrapper .text-block2 {
+    min-width: 18rem;
+    min-height: 50%;
   }
-  .wrapper-for-first-non-colored-background-section .text-block2 h2 {
+  .wrapper-for-first-non-colored-background-section .first-section-text-wrapper .text-block2 h2 {
     font-size: 3.2rem;
     padding-left: 10rem;
     padding-bottom: 0;
     text-align: start;
   }
-  .wrapper-for-first-non-colored-background-section .text-block2 p {
+  .wrapper-for-first-non-colored-background-section .first-section-text-wrapper .text-block2 p {
     line-height: 2.8rem;
     font-size: 1.8rem;
     padding-left: 10rem;
     text-align: start;
-    max-width: 40%;
+    max-width: 80%;
     margin: 0 auto 0 0;
   }
   /* section with the two phones and dark blue background*/
@@ -673,7 +812,7 @@ p.padding-for-content {
             justify-content: space-evenly;
   }
   #footer-div #blogr-in-footer {
-    margin: 0 25rem 0rem 0rem;
+    margin: 0 5rem 0rem 0rem;
   }
   #footer-div #Product-part-of-footer {
     font-size: 1.8rem;
@@ -689,11 +828,6 @@ p.padding-for-content {
     font-size: 1.8rem;
     text-align: left;
     line-height: 3.6rem;
-  }
-  .attribution {
-    position: absolute;
-    -webkit-transform: translateY(300%);
-            transform: translateY(300%);
   }
 }
 /*# sourceMappingURL=style.css.map */

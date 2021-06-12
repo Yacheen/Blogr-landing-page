@@ -7,14 +7,8 @@
   <link rel="stylesheet" href="style.css"/>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-  
   <title>Frontend Mentor | [Blogr]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { z-index: 5;font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
   <section id="header">
@@ -22,12 +16,37 @@
      
     <div class="padding-for-content" id="blogr-and-burger">
       <div id="navigation-left-side">
-      <h2>Blogr</h2>
+      <h2><a href="#">Blogr</a></h2>
 
-      <ul id="navigation-links">
-        <li class="nav-link">Product<img src="./images/icon-arrow-light.svg"></li>
-        <li class="nav-link">Company<img src="./images/icon-arrow-light.svg"></li>
-        <li class="nav-link">Connect<img src="./images/icon-arrow-light.svg"></li>
+      <ul class="navigation-links-desktop">
+        <li class="nav-link Product-link"><a href="#">Product</a><img src="./images/icon-arrow-light.svg">
+          <div class="Product-Dropdown DesktopDropdowns">
+            <a href="#">Overview</a>
+            <a href="#">Pricing</a>
+            <a href="#">Marketplace</a>
+            <a href="#">Features</a>
+            <a href="#">Integration</a>
+          </div>
+        </li>
+
+        <li class="nav-link Company-link"><a href="#">Company</a><img src="./images/icon-arrow-light.svg">
+          <div class="Company-Dropdown DesktopDropdowns">
+            <a href="#">About</a>
+            <a href="#">Team</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+            
+          </div>
+        </li>
+
+        <li class="nav-link Connect-link"><a href="#">Connect</a><img src="./images/icon-arrow-light.svg">
+          <div class="Connect-Dropdown DesktopDropdowns">
+            <a href="#">Contact</a>
+            <a href="#">Newsletter</a>
+            <a href="#">LinkedIn</a>
+            
+          </div>
+        </li>
       </ul>
       </div>
 
@@ -97,28 +116,32 @@
 
   <div class="wrapper-for-first-non-colored-background-section">
 
-    <div class="desktop-first-image">
-      <img class="padding-for-content" src="./images/illustration-editor-desktop.svg" alt="an image of a graph"/>
-    </div>
 
     <div class="first-image">
       <img class="padding-for-content" src="./images/illustration-editor-mobile.svg" alt="an image of a graph"/>
     </div>
-
-    <div class="text-block1">
-      <h2 class="padding-for-content">Introducing an extensible editor</h2>
-      <p class="padding-for-content">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-        The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-        videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-        change the looks of a blog.</p>
+    <div class="first-section-text-wrapper">
+      <div class="text-block1">
+        <h2 class="padding-for-content">Introducing an extensible editor</h2>
+        <p class="padding-for-content">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+          The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+          videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+          change the looks of a blog.</p>
+        </div>
+  
+      <div class="text-block2">
+        <h2 style="margin-bottom: 1rem; margin-top: 2rem;"class="padding-for-content" >Robust content management</h2>
+        <p style="margin-bottom: 26rem;"class="padding-for-content" >Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+      </div>
+      </div>
+    
+    
+      <div class="desktop-first-image">
+        <img class="padding-for-content" src="./images/illustration-editor-desktop.svg" alt="an image of a graph"/>
+      </div>
     </div>
-
-    <div class="text-block2">
-      <h2 style="margin-bottom: 1rem; margin-top: 2rem;"class="padding-for-content" >Robust content management</h2>
-      <p style="margin-bottom: 26rem;"class="padding-for-content" >Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-        by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
-    </div>
-  </div>
+  
 
   <section id="two-phone-section">
     <div class="padding-for-content" id="tha-two-phones-in-da-section">
@@ -166,7 +189,10 @@
   <footer>
     <div id="footer-div" class="padding-for-content"><!--USE SEMANTICS-->
       
-        <h1 id="blogr-in-footer">Blogr</h1>
+        <h1 id="blogr-in-footer">
+          <a href="#top">Blogr</a><p class="back-to-top">(back to the top)</p>
+        </h1>
+          
         
         <ul id="Product-part-of-footer">
           <li>Product</li>

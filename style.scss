@@ -46,7 +46,13 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 3rem;
-    #navigation-links {
+    h2 {
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+    .navigation-links-desktop {
       display: none;
     }
     #login-and-signup-buttons {
@@ -65,6 +71,9 @@ body {
       z-index: 10;
       background-color: white;
       border-radius: 3%;
+      p {
+        padding: 0.6rem;
+      }
 
       li {
         display: block;
@@ -95,21 +104,24 @@ body {
       }
       .Product-children {
         display: none;
+        background: hsla(240, 8%, 93%, 0.65);
       }
       .item-1-active {
         display: block;
       }
       .Company-children {
         display: none;
-        .item-2-active {
-          display: block;
-        }
+        background: hsla(240, 8%, 93%, 0.65);
+      }
+      .item-2-active {
+        display: block;
       }
       .Connect-children {
         display: none;
-        .item-3-active {
-          display: block;
-        }
+        background: hsla(240, 8%, 93%, 0.65);
+      }
+      .item-3-active {
+        display: block;
       }
     }
 
@@ -243,5 +255,13 @@ p {
     max-width: 100%;
     margin-top: 5rem;
   }
+}
+.attribution {
+  z-index: 5;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 @import "./mediaqueries-and-whatnot";

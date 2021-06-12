@@ -1,4 +1,8 @@
 #footer-div {
+  li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
   position: relative;
   display: flex;
   flex-direction: column;
@@ -13,6 +17,16 @@
   border-top-right-radius: 20%;
 
   #blogr-in-footer {
+    a,
+    .back-to-top {
+      color: white;
+      text-decoration: none;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+    cursor: pointer;
     margin-top: 5rem;
     color: white;
     margin-bottom: 6rem;
