@@ -20,7 +20,7 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
 I had a lot of fun making the design required with the assets given, and
 this project may have helped me the most with developing my design skills.
 
-It took approximately 15 hours total, and helped me learn some topics with
+It took approximately 15-20 hours total, and helped me learn some topics with
 Javascript as well, such as:
 For loops,
 Functions invoking functions,
@@ -37,28 +37,28 @@ Users should be able to:
 
 ### Screenshot
 
-![image](./design/desktop-design.jpg);
+![image](./design/desktop-design.jpg)
 
 ## My process
 
-First, I started with all of the html and css; designing everything to look responsive
-And then I added some functionality, such as hoverables and interaction with buttons and dropdowns.
+First, I started with all of the HTML and CSS; designing everything to look professional and responsive.
+Then I added some functionality, such as hoverables and interaction with buttons and dropdowns.
 
 I aimed to only spend a couple of days on this project, however it took me approximately 15-20 hours to learn everything I needed.
 
 ### What I learned
 
-- Semantic HTML5 markup
+- Responsive Web Design
 - CSS custom properties
 - Flexbox
-- Mobile-first workflow
+- Semantic HTML
 - Javascript
 
 ### Useful resources
 
 https://developer.mozilla.org/en-US/
 
-This website has been perfect for referencing documentation in order to get the job done.
+This website has been perfect for referencing documentation in order to understand topics required to properly design this layout
 
 ## Author
 
